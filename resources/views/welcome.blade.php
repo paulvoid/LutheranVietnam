@@ -79,9 +79,65 @@
             </div>
         </div>
         <div style="border-bottom: 3px solid #fbc83a;">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                            </li>
+{{--                            aboutDropdown--}}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Giới thiệu
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                    <a class="dropdown-item" href="#">Giới thiệu</a>
+                                    <a class="dropdown-item" href="#">Tầm nhìn</a>
+                                    <a class="dropdown-item" href="#">Sứ mệnh</a>
+                                    <a class="dropdown-item" href="#">Đội ngũ</a>
+                                    <a class="dropdown-item" href="#">Tuyển dụng</a>
+                                </div>
+                            </li>
+{{--                            worshipDropdown--}}
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="worshipDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Thờ phượng
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="worshipDropdown">
+                                    <a class="dropdown-item" href="#">Phụng Vụ Lutheran</a>
+                                    <a class="dropdown-item" href="#">Học Kinh Thánh và Dâng Hiến</a>
+                                    <a class="dropdown-item" href="#">Tin Tức</a>
+                                    <a class="dropdown-item" href="#">Lịch Phụng Vụ</a>
+                                    <a class="dropdown-item" href="#">Cầu Nguyện</a>
+                                    <a class="dropdown-item" href="#">Bài Đọc Thánh Lễ</a>
+                                    <a class="dropdown-item" href="#">Tóm Tắt Bài Đọc</a>
+                                    <a class="dropdown-item" href="#">Nhạc Thờ Phượng</a>
+                                    <a class="dropdown-item" href="#">Phương Tiện Truyền Thông</a>
+                                    <a class="dropdown-item" href="#">Lời Chúa Mỗi Ngày</a>
+                                    <a class="dropdown-item" href="#">Bài Giảng</a>
+                                    <a class="dropdown-item" href="#">Tham Khảo Lên Kế Hoạch Cho Thánh Lễ</a>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
 
         </div>
     </header>
+    <main class="container">
+        @yield('content')
+    </main>
 </div>
+@stack('scripts')
 </body>
 </html>
